@@ -8,5 +8,6 @@ router.use(function(req,res,next){
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
 });
-router.get('/table',tableController.check);
+router.get('/table',tableController.ready);
+router.get('/order',tableController.order);
 module.exports=router;
